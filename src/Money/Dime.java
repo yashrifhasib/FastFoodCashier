@@ -16,7 +16,7 @@ public class Dime {
      * Constructor
      * Sets Money.Dime count to 1;
      */
-    public Dime() { this.dime.modifyNickel(1); }
+    public Dime() { this.dime = new Nickel(1); }
 
     /**
      * Gets the number of dimes
