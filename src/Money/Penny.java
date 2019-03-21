@@ -1,3 +1,5 @@
+package Money;
+
 public class Penny {
     /**
      * Instance variable
@@ -12,7 +14,7 @@ public class Penny {
     public Penny(int penny) { this.penny = penny; }
 
     /**
-     * Constructor for setting Penny Object to 1.
+     * Constructor for setting Money.Penny Object to 1.
      */
     public Penny() { this.penny = 1; }
 

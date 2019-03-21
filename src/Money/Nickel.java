@@ -1,3 +1,5 @@
+package Money;
+
 public class Nickel {
     /**
      * Instance Variables

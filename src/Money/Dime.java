@@ -1,3 +1,5 @@
+package Money;
+
 public class Dime {
     /**
      * Instance variable
@@ -12,7 +14,7 @@ public class Dime {
 
     /**
      * Constructor
-     * Sets Dime count to 1;
+     * Sets Money.Dime count to 1;
      */
     public Dime() { this.dime.modifyNickel(1); }
 
