@@ -19,6 +19,12 @@ public class Dollar {
     public Dollar() { this.dollar = new Quarter(1); }
 
     /**
+     * Gets the count of the bills
+     * @return It s the same number as getDollar();
+     */
+    public int getDollarCount() { return this.dollar.getQuarter(); }
+
+    /**
      * Gets the money consisting of dollars
      * @return dollars.
      */
