@@ -22,7 +22,7 @@ public class DollarFive {
      * Gets the number of bills
      * @return count of 5 dollar bills
      */
-    public double getDollarFive() { return this.dollarFive.getDollarCount(); }
+    public int getDollarFive() { return this.dollarFive.getDollarCount(); }
 
     /**
      * Gets the money consisting of dollars
