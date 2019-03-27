@@ -1,4 +1,4 @@
-package Menu;
+package Menu.Entrees;
 
 import Money.Dime;
 import Money.Dollar;
@@ -26,7 +26,7 @@ public class ChickenSandwich implements Sandwich {
 
     /**
      *
-     * @return The price of the Chicken Sandwich
+     * @return The price of the Chicken Menu.Entrees.Sandwich
      */
     public double getPrice() {
         return dollar.getDollar() + quarter.getDollar() + dime.getDollar() + penny.getDollar();

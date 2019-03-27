@@ -1,4 +1,4 @@
-package Menu;
+package Menu.Entrees;
 
 import Money.Dime;
 import Money.Dollar;

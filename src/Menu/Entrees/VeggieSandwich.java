@@ -1,4 +1,4 @@
-package Menu;
+package Menu.Entrees;
 
 import Money.Dollar;
 import Money.Penny;
@@ -23,7 +23,7 @@ public class VeggieSandwich implements Sandwich {
 
     /**
      *
-     * @return The price of the Veggie Sandwich
+     * @return The price of the Veggie Menu.Entrees.Sandwich
      */
     public double getPrice() {
         return dollar.getDollar() + quarter.getDollar() + penny.getDollar();
