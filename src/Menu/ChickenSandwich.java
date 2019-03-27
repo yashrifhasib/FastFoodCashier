@@ -5,7 +5,7 @@ import Money.Dollar;
 import Money.Penny;
 import Money.Quarter;
 
-public class Hamburger implements Sandwich {
+public class ChickenSandwich implements Sandwich {
     /**
      * Instance variables
      */
@@ -17,7 +17,7 @@ public class Hamburger implements Sandwich {
     /**
      * Constructor
      */
-    public Hamburger() {
+    public ChickenSandwich() {
         dollar = new Dollar(1);
         quarter = new Quarter(3);
         dime = new Dime(2);
@@ -26,7 +26,7 @@ public class Hamburger implements Sandwich {
 
     /**
      *
-     * @return The price of the Hamburger
+     * @return The price of the Chicken Sandwich
      */
     public double getPrice() {
         return dollar.getDollar() + quarter.getDollar() + dime.getDollar() + penny.getDollar();
