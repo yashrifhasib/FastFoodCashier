@@ -1,12 +1,19 @@
-import Money.Penny;
-import Money.Nickel;
-import Money.Dime;
-import Money.Quarter;
-import Money.Dollar;
-import Money.DollarFive;
+import Money.*;
+import java.util.Scanner;
+import static java.lang.System.*;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner stdin = new Scanner(in);
+
+        Penny pennies = new Penny(100);
+        Nickel nickels = new Nickel(40);
+        Dime dimes = new Dime(50);
+        Quarter quarters = new Quarter(40);
+        Dollar dollars = new Dollar(42);
+        DollarFive dollarFives = new DollarFive(4);
+        DollarTen dollarTens = new DollarTen(2);
+
 
     }
 }
