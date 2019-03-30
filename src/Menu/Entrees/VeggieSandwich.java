@@ -28,4 +28,6 @@ public class VeggieSandwich implements Sandwich {
     public double getPrice() {
         return dollar.getDollar() + quarter.getDollar() + penny.getDollar();
     }
+
+    public String toString() { return "Veggie Sandwich"; }
 }

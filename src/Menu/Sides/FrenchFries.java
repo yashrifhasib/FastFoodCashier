@@ -1,15 +1,13 @@
-package Menu.Entrees;
+package Menu.Sides;
 
 import Money.Dime;
-import Money.Dollar;
 import Money.Penny;
 import Money.Quarter;
 
-public class Hamburger implements Sandwich {
+public class FrenchFries implements Side {
     /**
      * Instance variables
      */
-    private Dollar dollar;
     private Quarter quarter;
     private Dime dime;
     private Penny penny;
@@ -17,20 +15,19 @@ public class Hamburger implements Sandwich {
     /**
      * Constructor
      */
-    public Hamburger() {
-        dollar = new Dollar(1);
+    public FrenchFries() {
         quarter = new Quarter(3);
         dime = new Dime(2);
         penny = new Penny(4);
     }
 
     /**
-     *
-     * @return The price of the Hamburger
+     * gets the Price
+     * @return the price of french fries
      */
     public double getPrice() {
-        return dollar.getDollar() + quarter.getDollar() + dime.getDollar() + penny.getDollar();
+        return quarter.getDollar() + dime.getDollar() + penny.getDollar();
     }
 
-    public String toString() { return "Hamburger"; }
+    public String toString() { return "French Fries"; }
 }

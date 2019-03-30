@@ -1,11 +1,11 @@
-package Menu.Entrees;
+package Menu.Sides;
 
 import Money.Dime;
 import Money.Dollar;
 import Money.Penny;
 import Money.Quarter;
 
-public class ChickenSandwich implements Sandwich {
+public class CheeseSticks implements Side {
     /**
      * Instance variables
      */
@@ -17,20 +17,20 @@ public class ChickenSandwich implements Sandwich {
     /**
      * Constructor
      */
-    public ChickenSandwich() {
+    public CheeseSticks() {
         dollar = new Dollar(1);
-        quarter = new Quarter(3);
+        quarter = new Quarter(1);
         dime = new Dime(2);
         penny = new Penny(4);
     }
 
     /**
-     *
-     * @return The price of the Chicken Menu.Entrees.Sandwich
+     * gets the Price
+     * @return the price of cheese sticks
      */
     public double getPrice() {
         return dollar.getDollar() + quarter.getDollar() + dime.getDollar() + penny.getDollar();
     }
 
-    public String toString() { return "Chicken Sandwich"; }
+    public String toString() { return "Cheese Sticks"; }
 }

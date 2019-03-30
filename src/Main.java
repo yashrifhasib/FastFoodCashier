@@ -1,5 +1,5 @@
-import Menu.Entrees.Hamburger;
-import Menu.Entrees.Sandwich;
+import Menu.Desserts.Dessert;
+import Menu.Desserts.IceCream;
 import Money.*;
 
 import java.util.Scanner;
@@ -18,9 +18,7 @@ public class Main {
         DollarFive dollarFives = new DollarFive(4);
         DollarTen dollarTens = new DollarTen(2);
 
-        Sandwich ham = new Hamburger();
+        Dessert ham = new IceCream();
         System.out.println(ham.getPrice());
-
-
     }
 }
