@@ -24,6 +24,8 @@ public class SideSelector {
         }
     }
 
+    public Side getSelectedSide() { return this.selectedSide;}
+
     public double getPrice() {
         return selectedSide.getPrice();
     }

@@ -22,6 +22,14 @@ public class Juice implements Drink {
         penny = new Penny(4);
     }
 
+    public void add(Dollar dollar, Quarter quarter, Dime dime, Nickel nickel, Penny penny) {
+        dollar.addDollar(this.dollar.getDollarCount());
+        quarter.addQuarter(this.quarter.getQuarter());
+        dime.addDime(this.dime.getDime());
+        nickel.addNickel(this.nickel.getNickel());
+        penny.addPenny(this.penny.getPenny());
+    }
+
     /**
      * gets the Price
      * @return the price of Juice

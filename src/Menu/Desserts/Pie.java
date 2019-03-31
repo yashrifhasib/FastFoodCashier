@@ -23,6 +23,14 @@ public class Pie implements Dessert {
         penny = new Penny(4);
     }
 
+    public void add(Dollar dollar, Quarter quarter, Dime dime, Nickel nickel, Penny penny) {
+        dollar.addDollar(this.dollar.getDollarCount());
+        quarter.addQuarter(this.quarter.getQuarter());
+        nickel.addNickel(this.nickel.getNickel());
+        dime.addDime(this.dime.getDime());
+        penny.addPenny(this.penny.getPenny());
+    }
+
     /**
      * gets the Price
      * @return the price of Pie

@@ -21,6 +21,12 @@ public class VeggieSandwich implements Sandwich {
         penny = new Penny(4);
     }
 
+    public void add(Dollar dollar, Quarter quarter, Penny penny) {
+        dollar.addDollar(this.dollar.getDollarCount());
+        quarter.addQuarter(this.quarter.getQuarter());
+        penny.addPenny(this.penny.getPenny());
+    }
+
     /**
      *
      * @return The price of the Veggie Menu.Entrees.Sandwich

@@ -1,9 +1,6 @@
 package Menu.Drinks;
 
-import Money.Dime;
-import Money.Dollar;
-import Money.Nickel;
-import Money.Penny;
+import Money.*;
 
 public class Soda implements Drink {
     /**
@@ -22,6 +19,13 @@ public class Soda implements Drink {
         dime = new Dime(1);
         nickel = new Nickel(1);
         penny = new Penny(4);
+    }
+
+    public void add(Dollar dollar, Nickel nickel, Dime dime, Penny penny) {
+        dollar.addDollar(this.dollar.getDollarCount());
+        nickel.addNickel(this.nickel.getNickel());
+        dime.addDime(this.dime.getDime());
+        penny.addPenny(this.penny.getPenny());
     }
 
     /**

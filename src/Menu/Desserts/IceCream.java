@@ -21,6 +21,13 @@ public class IceCream implements Dessert {
         penny = new Penny(4);
     }
 
+    public void add(Dollar dollar, Quarter quarter, Dime dime, Penny penny) {
+        dollar.addDollar(this.dollar.getDollarCount());
+        quarter.addQuarter(this.quarter.getQuarter());
+        dime.addDime(this.dime.getDime());
+        penny.addPenny(this.penny.getPenny());
+    }
+
     /**
      * gets the Price
      * @return the price of Ice cream

@@ -17,6 +17,11 @@ public class BottledWater implements Drink {
         quarter = new Quarter(1);
     }
 
+    public void add(Dollar dollar, Quarter quarter) {
+        dollar.addDollar(this.dollar.getDollarCount());
+        quarter.addQuarter(this.quarter.getQuarter());
+    }
+
     /**
      * gets the Price
      * @return the price of bottled water

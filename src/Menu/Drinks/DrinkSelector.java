@@ -21,6 +21,8 @@ public class DrinkSelector {
         }
     }
 
+    public Drink getSelectedDrink() { return this.selectedDrink; }
+
     public double getPrice() {
         return selectedDrink.getPrice();
     }

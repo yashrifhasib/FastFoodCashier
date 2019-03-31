@@ -24,6 +24,13 @@ public class Hamburger implements Sandwich {
         penny = new Penny(4);
     }
 
+    public void add(Dollar dollar, Quarter quarter, Dime dime, Penny penny) {
+        dollar.addDollar(this.dollar.getDollarCount());
+        quarter.addQuarter(this.quarter.getQuarter());
+        dime.addDime(this.dime.getDime());
+        penny.addPenny(this.penny.getPenny());
+    }
+
     /**
      *
      * @return The price of the Hamburger

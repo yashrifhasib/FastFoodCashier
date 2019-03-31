@@ -27,6 +27,12 @@ public class EntreeSelector {
     }
 
     /**
+     * Gets the selected product.
+     * @return  the product.
+     */
+    public Sandwich getSelectedSandwich() { return this.selectedSandwich; }
+
+    /**
      * Gets the price of the product picked
      * @return the price
      */

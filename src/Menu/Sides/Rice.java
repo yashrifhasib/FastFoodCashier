@@ -21,6 +21,13 @@ public class Rice implements Side {
         penny = new Penny(4);
     }
 
+    public void add(Dollar dollar, Nickel nickel, Dime dime, Penny penny) {
+        dollar.addDollar(this.dollar.getDollarCount());
+        nickel.addNickel(this.nickel.getNickel());
+        dime.addDime(this.dime.getDime());
+        penny.addPenny(this.penny.getPenny());
+    }
+
     /**
      * gets the Price
      * @return the price of rice

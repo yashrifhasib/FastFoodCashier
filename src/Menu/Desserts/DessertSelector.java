@@ -22,6 +22,8 @@ public class DessertSelector {
         }
     }
 
+    public Dessert getSelectedDessert() { return this.selectedDessert; }
+
     public double getPrice() {
         return selectedDessert.getPrice();
     }
