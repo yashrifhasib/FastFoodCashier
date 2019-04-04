@@ -24,9 +24,9 @@ import Money.Nickel;
 import Money.Penny;
 import Money.Quarter;
 
+//Library Imports
 import java.util.Random;
 import java.util.Scanner;
-//Library Imports
 
 public class Main {
     private static Penny pennies = new Penny(100);
@@ -127,8 +127,19 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner stdin = new Scanner(System.in);
-        int rand = 2;
-        EntreeSelector newEntree = new EntreeSelector(rand);
-        entreeAdd(rand, newEntree);
+        Random rand = new Random();
+        int entreeRand = rand.nextInt(4);
+        int sideRand = rand.nextInt(5);
+        int drinkRand = rand.nextInt(4);
+        int dessertRand = rand.nextInt(4);
+        EntreeSelector newEntree = new EntreeSelector(entreeRand);
+        entreeAdd(entreeRand, newEntree);
+        SideSelector newSide = new SideSelector(sideRand);
+        sideAdd(sideRand, newSide);
+        DrinkSelector newDrink = new DrinkSelector(drinkRand);
+        drinkAdd(drinkRand, newDrink);
+        DessertSelector newDessert = new DessertSelector(dessertRand);
+        dessertAdd(dessertRand, newDessert);
+        
     }
 }
